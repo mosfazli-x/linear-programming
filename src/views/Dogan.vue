@@ -1,8 +1,9 @@
-<script lang="ts">
-import { Button } from "@/components/ui/button"
-
+<script setup lang="ts">
+console.log('say hello')
 </script>
 
 <template>
+    <div>
 
+    </div>
 </template>
