@@ -5,8 +5,8 @@ import '../src/assets/main.css';
 </script>
 
 <template>
-  <div class="bg-black w-dvw h-dvh overflow-x-hidden overflow-y-auto">
-    <div class="h-min p-4 flex gap-5 justify-center align-middle items-center">
+  <div class="bg-black w-dvw h-dvh overflow-auto">
+    <div class="h-min p-4 flex lg:flex-row flex-col gap-5 justify-center align-middle items-center">
       <RouterLink to="/simplex">
         <button class="btn" :class="route.path === '/simplex' ? 'btn-primary' : 'btn-outline'">
           Simplex Solver
@@ -18,6 +18,7 @@ import '../src/assets/main.css';
         </button>
       </RouterLink>
     </div>
+    <img class="fixed w-16 md:w-24 top-4 right-4" src="./assets/elmos_logo.png">
     <RouterView />
   </div>
 </template>
